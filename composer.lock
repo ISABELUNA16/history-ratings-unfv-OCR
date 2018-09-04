@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2277e44fe7b30d2e4eb726dec46bea8b",
+    "content-hash": "c130e06ca8f6c7be82b76ac519f2a913",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2254,6 +2254,48 @@
             "time": "2018-08-28T06:06:28+00:00"
         },
         {
+            "name": "thiagoalessio/tesseract_ocr",
+            "version": "1.0.0-RC",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thiagoalessio/tesseract-ocr-for-php.git",
+                "reference": "b22008ee163330aaaaae97424aa8b7dde8246882"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thiagoalessio/tesseract-ocr-for-php/zipball/b22008ee163330aaaaae97424aa8b7dde8246882",
+                "reference": "b22008ee163330aaaaae97424aa8b7dde8246882",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Alessio Pereira",
+                    "email": "thiagoalessio@me.com",
+                    "homepage": "http://thiagoalessio.me"
+                }
+            ],
+            "description": "A wrapper to work with Tesseract OCR inside PHP.",
+            "keywords": [
+                "OCR",
+                "Tesseract",
+                "text recognition"
+            ],
+            "time": "2016-04-20T23:29:55+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.35.4",
             "source": {
@@ -2444,7 +2486,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "thiagoalessio/tesseract_ocr": 5
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
